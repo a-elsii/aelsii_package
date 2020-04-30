@@ -6,4 +6,9 @@ class SayHello
     {
         return 'Hello World, Composer!' . PHP_EOL;
     }
+
+    public static function worldBack()
+    {
+        return 'Hello World, Composer!' . PHP_EOL;
+    }
 }
