@@ -1,0 +1,19 @@
+{
+  "name": "aelsii/package",
+  "description": "Aelsii Package",
+  "authors": [
+    {
+      "name": "Andrey",
+      "email": "aelsii@ukr.net"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "HelloWorld": "src/"
+    }
+  }
+}
