@@ -13,7 +13,7 @@ nbproject
 Thumbs.db
 
 /front_end/*
-
+tests/*
 # composer vendor dir
 /vendor
 /config/main-*.php

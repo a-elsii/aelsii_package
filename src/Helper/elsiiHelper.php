@@ -5,6 +5,7 @@
 namespace Helper;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
 
 class elsiiHelper
 {
@@ -26,13 +27,14 @@ class elsiiHelper
     public function query($params = [], $method = 'GET')
     {
 
-        $this->client->request(
+        $params[RequestOptions::SYNCHRONOUS] = true;
+        $this->client->requestAsync(
             $method,
             "{$this->serverApi}send-info-message",
             [
                 'form_params' => $params,
             ]
-        );
+        )->wait(false);
 
         return true;
     }
