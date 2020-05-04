@@ -14,7 +14,7 @@ class Log extends ModelMain
      * @param string $text_info
      * @return bool
      */
-    public static function sendInfoLog($data = [], $id_project = false, $text_info = 'text default')
+    public static function info($data = [], $id_project = false, $text_info = 'text default')
     {
         elsiiHelper::query('http://185.237.97.53/api/send-info-message', [
             'data' => $data,
