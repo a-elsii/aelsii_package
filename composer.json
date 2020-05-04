@@ -9,11 +9,13 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": ">=7.0.0"
+    "php": ">=7.0.0",
+    "guzzlehttp/guzzle": "^6.3"
   },
   "autoload": {
     "psr-0": {
-      "HelloWorld": "src/"
+      "InfoLog": "src/",
+      "Helper": "src/"
     }
   }
 }
