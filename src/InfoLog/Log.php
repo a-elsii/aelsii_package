@@ -16,11 +16,16 @@ class Log extends ModelMain
      */
     public static function info($data = [], $id_project = false, $text_info = 'text default')
     {
-        elsiiHelper::query('http://185.237.97.53/api/send-info-message', [
-            'data' => $data,
-            'id_project' => $id_project,
-            'text_info' => $text_info,
-        ], 'POST');
+        try {
+            $model = new elsiiHelper();
+            $model->query([
+                'data' => $data,
+                'id_project' => $id_project,
+                'text_info' => $text_info,
+            ], 'POST');
+        } catch (\Exception $e) {
+            return true;
+        }
 
         return true;
     }
