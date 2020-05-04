@@ -26,7 +26,6 @@ class elsiiHelper
      */
     public function query($params = [], $method = 'GET')
     {
-
         $params[RequestOptions::SYNCHRONOUS] = true;
         $this->client->requestAsync(
             $method,
