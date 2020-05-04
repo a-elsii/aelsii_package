@@ -9,7 +9,7 @@
       "email": "aelsii@ukr.net"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "require": {
     "php": ">=7.0.0",
     "guzzlehttp/guzzle": "^6.3"
