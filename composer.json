@@ -1,6 +1,8 @@
 {
   "name": "aelsii/package",
   "description": "Aelsii Package",
+  "type": "library",
+  "license": "MIT",
   "authors": [
     {
       "name": "Andrey",
