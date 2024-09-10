@@ -10,7 +10,7 @@ use DateTime;
 
 class elsiiHelper
 {
-    private $serverApi = 'http://185.237.97.53/api/';
+    private $serverApi = 'https://service-assistant-x.com/api/';
     private $client;
 
     public function __construct()
