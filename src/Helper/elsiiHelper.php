@@ -30,7 +30,7 @@ class elsiiHelper
         $params[RequestOptions::SYNCHRONOUS] = true;
         $this->client->requestAsync(
             $method,
-            "{$this->serverApi}send-info-message",
+            "{$this->serverApi}send-info-message?api_hash=0bfa34d13b4ad3016f7d8dcc9a14d21c",
             [
                 'form_params' => $params,
             ]
